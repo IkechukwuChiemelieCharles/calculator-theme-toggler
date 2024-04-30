@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h3>calc</h3>
+        <p class="theme">THEME</p>
+        <div class="palette-cont">
+          <div class="num">
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+          </div>
+          <div class="palette">
+            <span></span>
+          </div>
+        </div>
+      </header>
+      <form class="calculator" name="calc" action="">
+        <input type="text" class="value" name="txt" readonly="" />
+
+        <div class="keyboardBg">
+          <div class="num1 num" onclick="document.calc.txt.value +='7'">7</div>
+          <div class="num1 num" onclick="document.calc.txt.value +='8'">8</div>
+          <div class="num1 num" onclick="document.calc.txt.value +='9'">9</div>
+          <div class="num1 del" onclick="document.calc.txt.value =''">DEL</div>
+          <div class="num2 num" onclick="document.calc.txt.value +='4'">4</div>
+          <div class="num2 num" onclick="document.calc.txt.value +='5'">5</div>
+          <div class="num2 num" onclick="document.calc.txt.value +='6'">6</div>
+          <div class="num2 num" onclick="document.calc.txt.value +='+'">+</div>
+          <div class="num3 num" onclick="document.calc.txt.value +='1'">1</div>
+          <div class="num3 num" onclick="document.calc.txt.value +='2'">2</div>
+          <div class="num3 num" onclick="document.calc.txt.value +='3'">3</div>
+          <div class="num3 num" onclick="document.calc.txt.value +='-'">-</div>
+          <div class="num4 num" onclick="document.calc.txt.value +='.'">.</div>
+          <div class="num4 num" onclick="document.calc.txt.value +='0'">0</div>
+          <div class="num4 num" onclick="document.calc.txt.value +='/'">/</div>
+          <div class="num4 num" onclick="document.calc.txt.value +='x'">x</div>
+          <div class="reset" onclick="document.calc.txt.value =''">RESET</div>
+          <div
+            class="equal"
+            onclick="document.calc.txt.value = eval(calc.txt.value)"
+          >
+            =
+          </div>
+        </div>
+      </form>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Ikechukwu Chiemelie Charles</a>.
+      </div>
+    </div>
+    <script src="./data.js"></script>
+  </body>
+</html>

@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --bgColor: hsl(222, 26%, 31%);
+  --keybgColor: hsl(223, 31%, 20%);
+  --screenBg: hsl(224, 36%, 15%);
+  --resetBg: hsl(225, 21%, 49%);
+  --resetkeyshadow: hsl(224, 28%, 35%);
+  --toggleCol: hsl(6, 63%, 50%);
+  --btnbg: hsl(30, 25%, 89%);
+  --btnshadow: hsl(28, 16%, 65%);
+  --btntextcol: hsl(221, 14%, 31%);
+  --togglecolshad: hsl(6, 70%, 34%);
+  --whitebtntextcol: hsl(0, 0%, 100%);
+  --screentextcol: hsl(0, 0%, 100%);
+  --headingtextcol: hsl(0, 0%, 100%);
+  --resethover: hsl(226, 26%, 62%);
+  --equalhover: hsl(6, 66%, 62%);
+  --btnhover: hsl(0, 20%, 80%);
+}
+
+.theme2 {
+  --bgColor: hsl(0, 0%, 90%);
+  --keybgColor: hsl(0, 5%, 81%);
+  --screenBg: hsl(0, 0%, 93%);
+  --resetBg: hsl(185, 42%, 37%);
+  --resetkeyshadow: hsl(185, 58%, 25%);
+  --toggleCol: hsl(25, 98%, 40%);
+  --btnbg: hsl(30, 25%, 89%);
+  --btnshadow: hsl(28, 16%, 65%);
+  --btntextcol: hsl(221, 14%, 31%);
+  --screentextcol: hsl(198, 20%, 13%);
+  --headingtextcol: hsl(198, 20%, 13%);
+  --equalbtntextcol: hsl(0, 0%, 100%);
+  --resethover: hsl(185, 28%, 52%);
+  --equalhover: hsl(25, 56%, 52%);
+  --btnhover: hsl(0, 20%, 80%);
+}
+.theme3 {
+  --bgColor: hsl(268, 75%, 9%);
+  --keybgColor: hsl(268, 71%, 12%);
+  --screenBg: hsl(268, 71%, 12%);
+  --resetBg: hsl(281, 89%, 26%);
+  --resetkeyshadow: hsl(290, 70%, 36%);
+  --toggleCol: hsl(176, 100%, 44%);
+  --btnbg: hsl(268, 47%, 21%);
+  --btnshadow: hsl(290, 70%, 36%);
+  --btntextcol: hsl(52, 100%, 62%);
+  --togglecolshad: hsl(177, 92%, 70%);
+  --whitebtntextcol: hsl(0, 0%, 100%);
+  --screentextcol: hsl(52, 100%, 62%);
+  --equalbtntextcol: hsl(198, 20%, 13%);
+  --headingtextcol: hsl(52, 100%, 62%);
+  --resethover: hsl(281, 37%, 48%);
+  --equalhover: hsl(175, 42%, 70%);
+  --btnhover: hsl(290, 55%, 44%);
+
+  /* --keyBg: hsl(281, 89%, 26%);
+  --keyshadow: hsl(224, 28%, 35%);
+  --toggleBg: hsl(25, 98%, 40%); */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--bgColor);
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--headingtextcol);
+  font-family: "League Spartan";
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 20px;
+}
+.theme {
+  font-size: 10px;
+  margin-left: 120px;
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* margin-top: 10px; */
+}
+header h3 {
+  margin-left: 0;
+}
+.num {
+  display: flex;
+  gap: 10px;
+  font-size: 10px;
+  justify-content: center;
+}
+.num p {
+  font-family: "League Spartan";
+}
+.palette {
+  position: relative;
+  width: 50px;
+  height: 20px;
+  background-color: var(--keybgColor);
+  border-radius: 20px;
+  margin-bottom: 10px;
+  margin-right: 0px;
+  cursor: pointer;
+}
+.palette span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--toggleCol);
+  position: absolute;
+  top: 5px;
+  left: 2px;
+  cursor: pointer;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+input {
+  width: 250px;
+  height: 60px;
+  border-radius: 10px;
+  padding-right: 20px;
+  text-align: end;
+  background-color: var(--screenBg);
+  border: none;
+  color: var(--screentextcol);
+  font-family: "League Spartan";
+  font-weight: 700;
+  font-size: 22px;
+}
+.keyboardBg {
+  width: 250px;
+  background-color: var(--keybgColor);
+  display: grid;
+  /* justify-content: center; */
+  align-items: center;
+  grid-template-columns: 10px 10px 10px 10px;
+  border-radius: 10px;
+  gap: 50px;
+  margin-top: 20px;
+  padding: 10px 10px;
+}
+.keyboardBg div {
+  width: 50px;
+  height: 50px;
+  background-color: var(--btnbg);
+  box-shadow: 0 4px 1px var(--btnshadow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-right: -500px;
+  border-radius: 5px;
+  color: var(--btntextcol);
+  cursor: pointer;
+  font-size: 18px;
+}
+.num1 {
+  margin-bottom: -50px;
+}
+.num2 {
+  margin-bottom: -50px;
+}
+.num3 {
+  margin-bottom: -50px;
+}
+.num4 {
+  margin-top: -400px;
+}
+.del:nth-of-type(4) {
+  color: var(--whitebtntextcol);
+  background-color: var(--resetBg);
+  box-shadow: 0 4px 1px var(--resetkeyshadow);
+}
+
+.reset:nth-of-type(17) {
+  grid-column: 1/3;
+  width: 110px;
+  background-color: var(--resetBg);
+  box-shadow: 0 4px 1px var(--resetkeyshadow);
+  color: var(--whitebtntextcol);
+  margin-top: -30px;
+}
+.equal:nth-of-type(18) {
+  grid-column: 3/4;
+  width: 110px;
+  background-color: var(--toggleCol);
+  box-shadow: 0 4px 1px var(--togglecolshad);
+  color: var(--equalbtntextcol);
+  margin-top: -30px;
+}
+.reset:hover {
+  background-color: var(--resethover);
+}
+.del:hover {
+  background-color: var(--resethover);
+}
+.equal:hover {
+  background-color: var(--equalhover);
+}
+.palette span:hover {
+  background-color: var(--equalhover);
+}
+.num:hover {
+  background-color: var(--btnhover);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 20px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 768px) {
+  input {
+    width: 400px;
+  }
+  .calculator {
+    width: 400px;
+  }
+
+  .keyboardBg {
+    width: 400px;
+    background-color: var(--keybgColor);
+    display: grid;
+    /* justify-content: center; */
+    align-items: center;
+    grid-template-columns: 10px 10px 10px 10px;
+    border-radius: 10px;
+    gap: 90px;
+    margin-top: 10px;
+    padding: 10px 10px;
+  }
+  .keyboardBg div {
+    width: 80px;
+    height: 60px;
+    background-color: var(--btnbg);
+    box-shadow: 0 4px 1px var(--btnshadow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-right: -500px;
+    border-radius: 5px;
+    color: var(--btntextcol);
+    cursor: pointer;
+    font-size: 18px;
+  }
+  .num1 {
+    margin-bottom: -120px;
+  }
+  .num2 {
+    margin-bottom: -120px;
+  }
+  .num3 {
+    margin-bottom: -100px;
+  }
+  .num4 {
+    margin-bottom: -50px;
+  }
+  .reset:nth-of-type(17) {
+    grid-column: 1/3;
+    width: 180px;
+    background-color: var(--resetBg);
+    box-shadow: 0 4px 1px var(--resetkeyshadow);
+    color: var(--whitebtntextcol);
+    margin-top: -30px;
+  }
+  .equal:nth-of-type(18) {
+    grid-column: 3/4;
+    width: 180px;
+    background-color: var(--toggleCol);
+    box-shadow: 0 4px 1px var(--togglecolshad);
+    color: var(--equalbtntextcol);
+    margin-top: -30px;
+  }
+  .theme {
+    font-size: 10px;
+    margin-left: 280px;
+  }
+}
