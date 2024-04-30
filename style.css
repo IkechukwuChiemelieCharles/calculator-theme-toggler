@@ -81,7 +81,7 @@ body {
 }
 .theme {
   font-size: 10px;
-  margin-left: 110px;
+  margin-left: 90px;
   margin-right: 20px;
 }
 header {
@@ -96,22 +96,24 @@ header h3 {
 }
 .num {
   display: flex;
-  gap: 10px;
+  gap: 15px;
   font-size: 10px;
   justify-content: center;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
 }
 .num p {
   font-family: "League Spartan";
 }
 .palette {
   position: relative;
-  width: 50px;
-  height: 20px;
   background-color: var(--keybgColor);
-  border-radius: 20px;
   margin-bottom: 10px;
-  margin-right: 0px;
   cursor: pointer;
+  padding-right: 0.4rem;
+  height: 1.2rem;
+  width: 70px;
+  border-radius: 40px;
 }
 .palette span {
   width: 10px;
@@ -119,9 +121,11 @@ header h3 {
   border-radius: 50%;
   background-color: var(--toggleCol);
   position: absolute;
-  top: 5px;
-  left: 2px;
+  top: 3px;
+  left: 0;
   cursor: pointer;
+  width: 14px;
+  height: 14px;
 }
 form {
   display: flex;
@@ -299,6 +303,6 @@ input::placeholder {
   }
   .theme {
     font-size: 10px;
-    margin-left: 260px;
+    margin-left: 240px;
   }
 }
