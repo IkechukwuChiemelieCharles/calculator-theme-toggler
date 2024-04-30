@@ -81,7 +81,8 @@ body {
 }
 .theme {
   font-size: 10px;
-  margin-left: 120px;
+  margin-left: 110px;
+  margin-right: 20px;
 }
 header {
   display: flex;
