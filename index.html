@@ -29,13 +29,19 @@
         </div>
       </header>
       <form class="calculator" name="calc" action="">
-        <input type="text" class="value" name="txt" readonly="" />
+        <input
+          type="text"
+          class="value"
+          id="calculator-screen"
+          name="txt"
+          readonly=""
+        />
 
         <div class="keyboardBg">
           <div class="num1 num" onclick="document.calc.txt.value +='7'">7</div>
           <div class="num1 num" onclick="document.calc.txt.value +='8'">8</div>
           <div class="num1 num" onclick="document.calc.txt.value +='9'">9</div>
-          <div class="num1 del" onclick="document.calc.txt.value =''">DEL</div>
+          <div class="num1 del" id="del-btn">DEL</div>
           <div class="num2 num" onclick="document.calc.txt.value +='4'">4</div>
           <div class="num2 num" onclick="document.calc.txt.value +='5'">5</div>
           <div class="num2 num" onclick="document.calc.txt.value +='6'">6</div>

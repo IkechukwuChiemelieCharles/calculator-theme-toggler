@@ -32,3 +32,15 @@ switchContainer.addEventListener("click", function (event) {
       break;
   }
 });
+
+const calcScreen = document.getElementById("calculator-screen");
+const delBtn = document.getElementById("del-btn");
+
+delBtn.addEventListener("click", function () {
+  // Get the current value displayed on the calculator screen
+  let currentValue = calcScreen.value;
+  // Remove the last character from the value
+  let newValue = currentValue.slice(0, -1);
+  // Update the calculator screen with the modified value
+  calcScreen.value = newValue;
+});
