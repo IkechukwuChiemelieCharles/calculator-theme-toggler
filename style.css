@@ -229,6 +229,9 @@ input {
 }
 
 @media screen and (min-width: 768px) {
+  .container {
+    margin-top: 5px;
+  }
   input {
     width: 400px;
   }
