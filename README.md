@@ -63,8 +63,10 @@ I want to keep improving my JavaScript Skills
 
 - Frontend Mentor - [@IkechukwuChiemelieCharles](https://www.frontendmentor.io/profile/IkechukwuChiemelieCharles)
 - Twitter - [@charlieXtopher](https://www.twitter.com/charlieXtopher)
-- LinkedIn - [@chiemelieIkechukwu](https://www.linkedin.com/chiemelie-ikechukwu)
+- LinkedIn - [@chiemelieIkechukwu](https://www.linkedin.com/chiemelieIkechukwu)
 
 ## Acknowledgments
 
 - Frontend Mentor - [@jen67](https://www.frontendmentor.io/profile/jen67)
+
+- LinkedIn - [@Gift Amachree](https://www.linkedin.com/GiftAmachree)
