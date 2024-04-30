@@ -143,7 +143,7 @@ input {
   font-size: 22px;
 }
 input::placeholder {
-  color: white;
+  color: var(--screentextcol);
 }
 .keyboardBg {
   width: 250px;
