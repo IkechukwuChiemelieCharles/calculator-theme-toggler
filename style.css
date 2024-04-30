@@ -142,6 +142,9 @@ input {
   font-weight: 700;
   font-size: 22px;
 }
+input::placeholder {
+  color: white;
+}
 .keyboardBg {
   width: 250px;
   background-color: var(--keybgColor);
